@@ -111,7 +111,7 @@ public class HandymanMainActivity extends AppCompatActivity implements View.OnCl
 
                     if (user.isEmailVerified()) {
                         //Redirect to the search dashboard
-                        startActivity(new Intent(HandymanMainActivity.this, DashboardActivity.class));
+                        startActivity(new Intent(HandymanMainActivity.this, HandymanDashboard.class));
                     } else {
                         user.sendEmailVerification();
                         Toast.makeText(HandymanMainActivity.this, "Check your email to verify your account!", Toast.LENGTH_LONG).show();
