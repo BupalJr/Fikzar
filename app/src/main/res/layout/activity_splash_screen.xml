@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="@color/PurpleFik_1">
+
+    <!-- Image logo -->
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="816dp"
+        android:layout_height="574dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="260dp"
+        android:src="@drawable/splashlogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="296dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="260dp"
+        android:src="@drawable/fikzarlogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <Button
+        android:id="@+id/btn_looking_handyman"
+        android:layout_width="176dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:background="@drawable/splash_btn"
+        android:text="Looking For Handyman"
+        android:textColor="@color/PurpleFik_1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/WhiteFik"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <Button
+        android:id="@+id/btn_i_am_handyman"
+        android:layout_width="168dp"
+        android:layout_height="84dp"
+        android:background="@drawable/splash_btn"
+        android:text="I Am Handyman"
+        android:textColor="@color/PurpleFik_1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/WhiteFik"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/btn_looking_handyman"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo"
+        app:layout_constraintVertical_bias="0.684" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

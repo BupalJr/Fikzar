@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb3"
+    tools:context=".customer.DisplaySearch">
+
+    <!-- Title Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <!--        Back arrow-->
+            <ImageView
+                android:id="@+id/view_back_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="50dp"
+                android:src="@drawable/ic_baseline_arrow_back" />
+
+            <!--    Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="100dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="20dp"
+                android:paddingTop="50dp"
+                android:text="Nearest Handyman..."
+                android:textColor="@color/BlackFik"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--    Break -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/BlackFik" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="110dp">
+
+            <!--    First Search -->
+            <LinearLayout
+                android:id="@+id/display_search_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Profile pic-->
+                <ImageView
+                    android:id="@+id/profile_pic_1"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/profpic4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--   Full name -->
+                    <TextView
+                        android:id="@+id/full_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:letterSpacing="0.4"
+                        android:paddingLeft="30dp"
+                        android:text="Peter Billion"
+                        android:textColor="@color/PurpleFik_2"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!--   Buttons for jobs-->
+                    <LinearLayout
+                        android:layout_width="5000dp"
+                        android:layout_height="33dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="35dp">
+
+                        <Button
+                            android:id="@+id/btn_display_jobs_1_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/service_btn"
+                            android:text="Painting"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_display_jobs_1_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/service_btn"
+                            android:text="Moving Help"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--   Handyman Statement -->
+                    <TextView
+                        android:id="@+id/handyman_statement_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10dp"
+                        android:text="Our domestic painting and decorating services include;
+Interior and exterior painting and decorating...."
+                        android:textSize="14sp" />
+
+                    <!--    Vectors -->
+                    <!--  Set up onClick-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="200dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--   Location -->
+                            <ImageView
+                                android:id="@+id/location_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:src="@drawable/ic_baseline_location_on" />
+
+                            <!-- Location Postcode-->
+                            <TextView
+                                android:id="@+id/display_postcode_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BS1" />
+
+                            <!--  Chat -->
+                            <ImageView
+                                android:id="@+id/chat_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:src="@drawable/ic_baseline_chat" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--    Break -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/PurpleFik_1" />
+
+            <!--    Second Search -->
+            <LinearLayout
+                android:id="@+id/display_search_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Profile pic-->
+                <ImageView
+                    android:id="@+id/profile_pic_2"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/profpic2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--   Full name -->
+                    <TextView
+                        android:id="@+id/full_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:letterSpacing="0.4"
+                        android:paddingLeft="30dp"
+                        android:text="Tim Allen"
+                        android:textColor="@color/PurpleFik_2"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!--   Buttons for jobs-->
+                    <LinearLayout
+                        android:layout_width="5000dp"
+                        android:layout_height="33dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="35dp">
+
+                        <Button
+                            android:id="@+id/btn_display_jobs_2_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/service_btn"
+                            android:text="Interior Design"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_display_jobs_2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/service_btn"
+                            android:text="Moving Help"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--   Handyman Statement -->
+                    <TextView
+                        android:id="@+id/handyman_statement_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10dp"
+                        android:text="Our domestic painting and decorating services include;
+Interior and exterior painting and decorating...."
+                        android:textSize="14sp" />
+
+                    <!--    Vectors -->
+                    <!--  Set up onClick-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="200dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--   Location -->
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:src="@drawable/ic_baseline_location_on" />
+
+                            <!-- Location Postcode-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BS1" />
+
+                            <!--  Chat -->
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:src="@drawable/ic_baseline_chat" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--    Break -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/PurpleFik_1" />
+
+            <!--    Third Search -->
+            <LinearLayout
+                android:id="@+id/display_search_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Profile pic-->
+                <ImageView
+                    android:id="@+id/profile_pic_3"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/profpic3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--   Full name -->
+                    <TextView
+                        android:id="@+id/full_name_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:letterSpacing="0.4"
+                        android:paddingLeft="30dp"
+                        android:text="South West Ltd"
+                        android:textColor="@color/PurpleFik_2"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!--   Buttons for jobs-->
+                    <LinearLayout
+                        android:layout_width="5000dp"
+                        android:layout_height="33dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="35dp">
+
+                        <Button
+                            android:id="@+id/btn_display_jobs_3_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/service_btn"
+                            android:text="Moving Help"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_display_jobs_3_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/service_btn"
+                            android:text="Home Cleaning"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--   Handyman Statement -->
+                    <TextView
+                        android:id="@+id/handyman_statement_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10dp"
+                        android:text="Our domestic painting and decorating services include;
+Interior and exterior painting and decorating...."
+                        android:textSize="14sp" />
+
+                    <!--    Vectors -->
+                    <!--  Set up onClick-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="200dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--   Location -->
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:src="@drawable/ic_baseline_location_on" />
+
+                            <!-- Location Postcode-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BS5" />
+
+                            <!--  Chat -->
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:src="@drawable/ic_baseline_chat" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--    Break -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/PurpleFik_1" />
+
+            <!--End Line -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="100dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_horizontal"
+                android:text="Please contact one of these handyman..."
+                android:textAlignment="center"
+                android:textColor="@color/PurpleFik_1"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

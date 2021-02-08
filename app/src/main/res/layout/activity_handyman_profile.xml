@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb3"
+    android:orientation="vertical"
+    tools:context=".HandymanProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--   Profile Title-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--        Back arrow-->
+            <ImageView
+                android:id="@+id/view_back_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="50dp"
+                android:src="@drawable/ic_baseline_arrow_back" />
+
+            <!--    Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="100dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="20dp"
+                android:paddingTop="50dp"
+                android:text="Profile"
+                android:textColor="@color/BlackFik"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--  Profile pic and name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_chatter"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:src="@drawable/profpic3" />
+
+
+            <TextView
+                android:id="@+id/display_handyman_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="110dp"
+                android:paddingTop="10dp"
+                android:text="Peter Billion"
+                android:textColor="@color/PurpleFik_3"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/display_user_fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="150dp"
+                    android:text="Bristol, BS1"
+                    android:textColor="@color/BlackFik"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/ic_baseline_mark_chat_read" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/view_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:text="View All Reviews"
+                android:textColor="@color/WhiteFik"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--    Break -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#636363" />
+
+        <!-- About-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="About"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/company_statement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Company statement...."
+                android:textSize="19sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <!--    Break Line-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#636363" />
+
+        <!-- Skills-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Skills"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/company_skils"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Painting, Moving Help, Exterior Painting."
+                android:textSize="19sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb3"
+    tools:context=".customer.DashboardActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+    <!--    Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="100dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingLeft="20dp"
+        android:paddingTop="50dp"
+        android:text="Latest"
+        android:textColor="@color/BlackFik"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!--    Break -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/BlackFik" />
+
+    </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="110dp">
+
+
+            <!--    First Post -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:orientation="horizontal">
+
+
+                <!-- Profile pic-->
+                <ImageView
+                    android:id="@+id/profile_pic_1"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/profpic4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--                Full name -->
+                    <TextView
+                        android:id="@+id/full_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="20dp"
+                        android:text="Peter Billion"
+                        android:textColor="@color/PurpleFik_2"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!--                Post picture-->
+                    <ImageView
+                        android:id="@+id/post_picture_1"
+                        android:layout_width="195dp"
+                        android:layout_height="115dp"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/post2" />
+
+                    <!--                Vectors -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="120dp">
+
+                        <!--                    Like -->
+                        <ImageView
+                            android:id="@+id/like_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic__like" />
+
+                        <!--                    Chat -->
+                        <ImageView
+                            android:id="@+id/chat_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/ic_baseline_chat" />
+                    </LinearLayout>
+
+                    <!--                post content -->
+                    <TextView
+                        android:id="@+id/post_content_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Post content.."
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--    Break -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/PurpleFik_2" />
+
+            <!--    Second Post -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:orientation="horizontal">
+
+
+                <!-- Profile pic-->
+                <ImageView
+                    android:id="@+id/profile_pic_2"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/profpic2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--                Full name -->
+                    <TextView
+                        android:id="@+id/full_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="20dp"
+                        android:text="South West Flooring Ltd"
+                        android:textColor="@color/PurpleFik_2"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!--                Post picture-->
+                    <ImageView
+                        android:id="@+id/post_picture_2"
+                        android:layout_width="195dp"
+                        android:layout_height="115dp"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/post4" />
+
+                    <!--                Vectors -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="120dp">
+
+                        <!--                    Like -->
+                        <ImageView
+                            android:id="@+id/like_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic__like" />
+
+                        <!--                    Chat -->
+                        <ImageView
+                            android:id="@+id/chat_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/ic_baseline_chat" />
+                    </LinearLayout>
+
+                    <!--                post content -->
+                    <TextView
+                        android:id="@+id/post_content_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Post content.."
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--    Break -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/PurpleFik_2" />
+
+            <!--    Third Post -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:orientation="horizontal">
+
+
+                <!-- Profile pic-->
+                <ImageView
+                    android:id="@+id/profile_pic_3"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/profpic3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--   Full name -->
+                    <TextView
+                        android:id="@+id/full_name_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="20dp"
+                        android:text="PWe Repair"
+                        android:textColor="@color/PurpleFik_2"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!--   Post picture-->
+                    <ImageView
+                        android:id="@+id/post_picture_3"
+                        android:layout_width="195dp"
+                        android:layout_height="115dp"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/post1" />
+
+                    <!--  Vectors -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="120dp">
+
+                        <!--    Like -->
+                        <ImageView
+                            android:id="@+id/like_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic__like" />
+
+                        <!--    Chat -->
+                        <ImageView
+                            android:id="@+id/chat_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/ic_baseline_chat" />
+                    </LinearLayout>
+
+                    <!--     post content -->
+                    <TextView
+                        android:id="@+id/post_content_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Post content.."
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--    Break -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/PurpleFik_2" />
+
+            <!--    Fourth Post -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:orientation="horizontal">
+
+
+                <!-- Profile pic-->
+                <ImageView
+                    android:id="@+id/profile_pic_4"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/profpic1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--                Full name -->
+                    <TextView
+                        android:id="@+id/full_name_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="20dp"
+                        android:text="Malik Shay"
+                        android:textColor="@color/PurpleFik_2"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!--                Post picture-->
+                    <ImageView
+                        android:id="@+id/post_picture_4"
+                        android:layout_width="195dp"
+                        android:layout_height="115dp"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/post3" />
+
+                    <!--                Vectors -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="120dp">
+
+                        <!--                    Like -->
+                        <ImageView
+                            android:id="@+id/like_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic__like" />
+
+                        <!--                    Chat -->
+                        <ImageView
+                            android:id="@+id/chat_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:src="@drawable/ic_baseline_chat" />
+                    </LinearLayout>
+
+                    <!--                post content -->
+                    <TextView
+                        android:id="@+id/post_content_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Post content.."
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--    Break -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/PurpleFik_2" />
+
+            <!--You are up to date!-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="100dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_horizontal"
+                android:text="You Are up to date!"
+                android:textAlignment="center"
+                android:textColor="@color/PurpleFik_1"
+                android:textSize="25sp"
+                android:textStyle="italic" />
+
+            <!--    Break -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/PurpleFik_2" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/PurpleFik_1"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+</RelativeLayout>

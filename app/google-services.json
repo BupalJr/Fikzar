@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "710430569200",
+    "project_id": "auth-e3e87",
+    "storage_bucket": "auth-e3e87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710430569200:android:7ec0ca8f8e1f0766954835",
+        "android_client_info": {
+          "package_name": "bupaljr.com.fikzar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710430569200-0jtg53vbtnl1oajs11s44la4eqp1d51n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKnjNCT-LCNQhwZ6CXE5Dp5knH27SmB9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710430569200-0jtg53vbtnl1oajs11s44la4eqp1d51n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

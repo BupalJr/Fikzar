@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb3"
+    android:orientation="vertical"
+    tools:context=".customer.UserProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--   Profile Title-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--        Back arrow-->
+            <ImageView
+                android:id="@+id/view_back_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="50dp"
+                android:src="@drawable/ic_baseline_arrow_back" />
+
+            <!--    Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="100dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="20dp"
+                android:paddingTop="50dp"
+                android:text="Profile"
+                android:textColor="@color/BlackFik"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--  Profile pic and name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_chatter"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:paddingLeft="20dp"
+                android:src="@drawable/profpic4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/display_user_fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="30dp"
+                    android:text="Peter Billion"
+                    android:textColor="@color/PurpleFik_3"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    Break -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#636363" />
+
+        <!-- User information-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="User information"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/display_user_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Full Name:"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/display_user_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Username:"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/display_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Email:"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+        <!--    Break Line-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#636363" />
+
+        <!-- About-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="About"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/display_last_onbline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Last Online::"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/display_member_since"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Memeber since::"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <!--    Break Line-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#636363" />
+
+        <!--    Logout -->
+        <LinearLayout
+            android:id="@+id/click_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:text="Logout" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:src="@drawable/ic_baseline_power" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
