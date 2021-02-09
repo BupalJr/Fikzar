@@ -10,24 +10,20 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import bupaljr.com.fikzar.R;
-import bupaljr.com.fikzar.customer.AccountActivity;
-import bupaljr.com.fikzar.customer.ChatsActivity;
-import bupaljr.com.fikzar.customer.JobsActivity;
-import bupaljr.com.fikzar.customer.SearchActivity;
 
-public class HandymanDashboard extends AppCompatActivity {
+public class HandymanJobs extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_handyman_dashboard);
+        setContentView(R.layout.activity_handyman_jobs);
 
 
         // Initialize variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         // Set Home Selected
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setSelectedItemId(R.id.jobs);
 
         //Perform ItemSelectedListener bottomNavigationView
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -35,15 +31,11 @@ public class HandymanDashboard extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.home:
-//                        startActivity(new Intent(getApplicationContext()
-//                                , HandymanDashboard.class));
-//                        overridePendingTransition(0, 0);
-//                        return true;
-                    case R.id.jobs:
                         startActivity(new Intent(getApplicationContext()
-                                , HandymanJobs.class));
+                                , HandymanDashboard.class));
                         overridePendingTransition(0, 0);
                         return true;
+                    case R.id.jobs:
                     case R.id.packs:
                         startActivity(new Intent(getApplicationContext()
                                 , HandymanPacks.class));

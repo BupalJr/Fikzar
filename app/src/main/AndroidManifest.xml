@@ -10,14 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fikzar">
 
-        <activity android:name=".SplashScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".SplashScreen" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".HandymanProfile" />
+
+
+        <!--        Customer Activities-->
         <activity android:name=".customer.MainActivity" />
         <activity android:name=".customer.RegisterUserActivity" />
         <activity android:name=".customer.ForgotPassword" />
@@ -28,16 +26,25 @@
         <activity android:name=".customer.JobsActivity" />
         <activity android:name=".customer.AccountActivity" />
         <activity android:name=".customer.UserProfileActivity" />
-
         <activity android:name=".customer.SettingsActivity" />
         <activity android:name=".customer.AboutUsActivity" />
 
-
+        <!--        Handyman Activities-->
         <activity android:name=".handyman.HandymanMainActivity" />
         <activity android:name=".handyman.RegisterHandyman" />
         <activity android:name=".handyman.ForgotPasswordHandyman" />
+        <activity android:name=".handyman.HandymanDashboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <activity android:name=".handyman.HandymanDashboard" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".handyman.HandymanPacks" />
+        <activity android:name=".handyman.HandymanAccount" />
+        <activity android:name=".handyman.HandymanChats" />
+        <activity android:name=".handyman.HandymanJobs" />
     </application>
 
 </manifest>
