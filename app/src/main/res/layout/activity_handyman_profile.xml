@@ -47,11 +47,15 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/image_chatter"
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
                 android:layout_width="match_parent"
-                android:layout_height="105dp"
-                android:src="@drawable/profpic3" />
+                android:layout_height="96dp"
+                android:src="@drawable/profpic2"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
 
 
             <TextView

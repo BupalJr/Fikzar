@@ -83,4 +83,15 @@
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu_navigation" />
+
+
+
+    <!--    Bottom App Bar-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/bottom_app_bar" />
+
+
+
 </RelativeLayout>

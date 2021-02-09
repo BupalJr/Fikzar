@@ -427,4 +427,13 @@ Interior and exterior painting and decorating...."
 
         </LinearLayout>
     </ScrollView>
+
+
+    <!--    Bottom App Bar-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="4000dp"
+        android:src="@drawable/bottom_app_bar" />
+
+
 </RelativeLayout>

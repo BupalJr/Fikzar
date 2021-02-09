@@ -5,12 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bb3"
+    android:background="@color/WhiteFik"
     tools:context=".customer.DashboardActivity">
+
+
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,18 +22,18 @@
         android:layout_alignParentTop="true"
         android:orientation="vertical">
 
-    <!--    Title -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="100dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:paddingLeft="20dp"
-        android:paddingTop="50dp"
-        android:text="Latest"
-        android:textColor="@color/BlackFik"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+<!--    &lt;!&ndash;    Title &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:elevation="100dp"-->
+<!--        android:fontFamily="sans-serif-smallcaps"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:paddingTop="50dp"-->
+<!--        android:text="Latest"-->
+<!--        android:textColor="@color/BlackFik"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold" />-->
 
     <!--    Break -->
     <View
@@ -413,4 +417,34 @@
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu_navigation" />
+
+
+    <!--    Top App Bar-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:scaleX="-2"
+        android:src="@drawable/top_app_bar" />
+
+    <!--    Bottom App Bar-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/bottom_app_bar" />
+
+
+    <!--    Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="100dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingLeft="20dp"
+        android:paddingTop="50dp"
+        android:text="Latest"
+        android:textColor="@color/WhiteFik"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 </RelativeLayout>

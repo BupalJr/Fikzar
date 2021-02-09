@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/bb3"
+    android:background="@color/WhiteFik"
     tools:context=".customer.SearchActivity">
 
 
@@ -18,8 +18,6 @@
         android:queryHint="@string/search_text">
 
     </SearchView>
-
-
 
     <!--   The process -->
     <LinearLayout
@@ -420,6 +418,24 @@
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu_navigation" />
+
+
+    <!--    Top App Bar-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:scaleX="-2"
+        android:src="@drawable/top_app_bar" />
+
+    <!--    Bottom App Bar-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/bottom_app_bar" />
+
+
 </RelativeLayout>
 
 

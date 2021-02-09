@@ -37,7 +37,7 @@
         <activity android:name=".handyman.RegisterHandyman" />
         <activity android:name=".handyman.ForgotPasswordHandyman" />
 
-        <activity android:name=".handyman.HandymanDashboard"/>
+        <activity android:name=".handyman.HandymanDashboard" />
     </application>
 
 </manifest>
