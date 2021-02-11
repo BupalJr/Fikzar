@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
         android:id="@+id/home"
         android:icon="@drawable/ic_baseline_home"
         android:title="Home" />
-
-
 
     <item
         android:id="@+id/chats"
         android:icon="@drawable/ic_baseline_chat"
         android:title="Chats" />
 
-
     <item
-        android:id="@+id/hire"
-        android:icon="@drawable/ic_baseline_work_"
+        android:id="@+id/jobs"
+        android:icon="@drawable/ic_baseline_work_outline"
         android:title="Jobs" />
 
     <item
-        android:id="@+id/search"
-        android:icon="@drawable/ic_baseline_search"
-        android:title="Packages" />
-
+        android:id="@+id/packs"
+        android:icon="@drawable/ic_baseline_stay_primary_landscape"
+        android:title="Packs" />
 
     <item
         android:id="@+id/account"

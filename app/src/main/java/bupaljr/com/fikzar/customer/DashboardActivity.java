@@ -10,6 +10,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import bupaljr.com.fikzar.R;
+import bupaljr.com.fikzar.handyman.HandymanAccount;
+import bupaljr.com.fikzar.handyman.HandymanChats;
+import bupaljr.com.fikzar.handyman.HandymanDashboard;
+import bupaljr.com.fikzar.handyman.HandymanJobs;
+import bupaljr.com.fikzar.handyman.HandymanPacks;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -18,12 +23,6 @@ public class DashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-
-
-
-
-
-
 
 
         // Initialize variable
