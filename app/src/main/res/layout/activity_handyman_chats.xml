@@ -13,15 +13,6 @@
         android:orientation="vertical"
         android:paddingTop="80dp">
 
-        <!--    Break -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:background="@color/PurpleFik_2" />
-
-
         <!--    First chat -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -265,22 +256,16 @@
     <!-- Top App Bar-->
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="5000dp"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:scaleX="-2"
         android:src="@drawable/top_app_bar" />
 
-    <!--  Bottom App Bar-->
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:src="@drawable/bottom_app_bar" />
-
     <!-- Title -->
     <TextView
-        android:layout_width="500dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:elevation="100dp"
         android:fontFamily="sans-serif-smallcaps"
         android:paddingLeft="20dp"
@@ -289,4 +274,12 @@
         android:textColor="@color/WhiteFik"
         android:textSize="25sp"
         android:textStyle="bold" />
+
+    <!--  Bottom App Bar-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/bottom_app_bar" />
+
+
 </RelativeLayout>

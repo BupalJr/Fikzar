@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/input_bg"
+    tools:context=".handyman.HandymanAccountSetup">
+
+    <!--    Top App Bar-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="551dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/top_app_bar" />
+
+    <!--    Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="100dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:letterSpacing="0.15"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:text="Fill Your Details here"
+        android:textColor="@color/WhiteFik"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/input_profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="101dp"
+        android:src="@drawable/profpic2"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <EditText
+        android:id="@+id/h_location"
+        android:layout_width="311dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/input_profile_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:hint="Add your city"
+        android:textColor="@color/PurpleFik_1"
+        android:textSize="18sp"
+        android:background="@drawable/input_bg" />
+
+    <EditText
+        android:id="@+id/h_jobs"
+        android:layout_width="311dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/h_location"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:hint="Add your jobs here"
+        android:textColor="@color/PurpleFik_1"
+        android:textSize="18sp"
+        android:background="@drawable/input_bg" />
+
+    <EditText
+        android:id="@+id/h_about"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/h_jobs"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:background="@drawable/input_bg"
+        android:hint="Your business statement..."
+        android:textColor="@color/PurpleFik_1"
+        android:textSize="18sp" />
+
+    <!--    Bottom App Bar-->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_below="@+id/h_about"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="203dp"
+        android:background="@drawable/btn_bg"
+        android:letterSpacing="0.25"
+        android:text="Submit"
+        android:textColor="@color/WhiteFik"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_add_post_bg"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottom_app_bar" />
+
+</RelativeLayout>

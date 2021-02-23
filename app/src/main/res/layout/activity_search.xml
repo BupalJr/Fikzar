@@ -7,24 +7,24 @@
     android:background="@color/WhiteFik"
     tools:context=".customer.SearchActivity">
 
-
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:fontFamily="casual"
-        android:iconifiedByDefault="false"
-        android:queryHint="@string/search_text">
-
-    </SearchView>
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="372dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_search"
+        android:drawableRight="@drawable/ic_baseline_search"
+        android:gravity="center"
+        android:hint="Search here...Painter, Plumper or moving.. "
+        android:textSize="15sp" />
 
     <!--   The process -->
     <LinearLayout
         android:id="@+id/process"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/searchView"
+        android:layout_below="@id/inputSearch"
         android:layout_gravity="center">
 
         <!-- find -->
@@ -209,6 +209,7 @@
 
         <!--    Painter-->
         <LinearLayout
+            android:id="@+id/click_painting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -277,7 +278,6 @@
                     android:src="@drawable/ic_baseline_arrow_forward" />
             </RelativeLayout>
         </LinearLayout>
-
 
         <!--    Plumbing Services-->
         <LinearLayout

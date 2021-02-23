@@ -1,11 +1,13 @@
 package bupaljr.com.fikzar.customer;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -23,6 +25,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 
 import bupaljr.com.fikzar.R;
+import bupaljr.com.fikzar.handyman.HandymanMainActivity;
+import bupaljr.com.fikzar.handyman.RegisterHandyman;
+import bupaljr.com.fikzar.model.User;
 
 public class RegisterUserActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -33,6 +38,8 @@ public class RegisterUserActivity extends AppCompatActivity implements View.OnCl
 
     private ProgressBar progressBar;
     private FirebaseAuth mAuth;
+
+    ImageView clickBack;
 
     DatabaseReference MainPost;
 
@@ -53,6 +60,15 @@ public class RegisterUserActivity extends AppCompatActivity implements View.OnCl
         editTextPassword = findViewById(R.id.input_password);
 
         progressBar = findViewById(R.id.progressBar);
+
+        // Go Back Arrow ->
+        clickBack = findViewById(R.id.view_back_arrow);
+        clickBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(RegisterUserActivity.this, MainActivity.class));
+            }
+        });
     }
 
     @Override
@@ -64,6 +80,7 @@ public class RegisterUserActivity extends AppCompatActivity implements View.OnCl
                 break;
         }
     }
+
 
     public void registerUser() {
         String fullName = editTextFullName.getText().toString().trim();
@@ -181,52 +198,5 @@ public class RegisterUserActivity extends AppCompatActivity implements View.OnCl
                 });
             }
         });
-
-        /*
-
-         */
-
     }
 }
-
-/*
-    private void registerDatabase() {
-
-        MainPost = FirebaseDatabase.getInstance().getReference().child("UserData");
-
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                final ProgressDialog mDialog = new ProgressDialog(RegisterUserActivity.this);
-                mDialog.setMessage("Please wait....");
-                mDialog.show();
-
-
-                HashMap<String, Object> map = new HashMap<>();
-                map.put("FullName", editTextFullName.getText().toString());
-                map.put("UserName", editTextUserName.getText().toString());
-                map.put("Email", editTextEmail.getText().toString());
-                map.put("Password", editTextPassword.getText().toString());
-
-                MainPost.push()
-                        .setValue(map)
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful()) {
-                                    Toast.makeText(RegisterUserActivity.this, "Added Succesfully!", Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        }).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        editTextFullName.setText("");
-                        editTextUserName.setText("");
-                        editTextEmail.setText("");
-
-                        mDialog.dismiss();
-                    }
-                });
-            }
-            */

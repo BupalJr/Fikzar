@@ -12,15 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingTop="100dp">
-
-        <!--    Break -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="16dp"
-            android:background="@color/PurpleFik_2" />
+        android:paddingTop="80dp">
 
 
         <!--    Profile-->
@@ -260,7 +252,7 @@
     <!--    Top App Bar-->
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:scaleX="-2"
@@ -274,12 +266,12 @@
 
     <!--    Title -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
         android:elevation="100dp"
         android:fontFamily="sans-serif-smallcaps"
         android:paddingLeft="20dp"
-        android:paddingTop="50dp"
+        android:paddingTop="30dp"
         android:text="Account"
         android:textColor="@color/WhiteFik"
         android:textSize="25sp"

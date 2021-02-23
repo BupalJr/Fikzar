@@ -131,7 +131,6 @@
 Interior and exterior painting and decorating...."
                         android:textSize="14sp" />
 
-                    <!--    Vectors -->
                     <!--  Set up onClick-->
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -428,11 +427,11 @@ Interior and exterior painting and decorating...."
         </LinearLayout>
     </ScrollView>
 
-
     <!--    Bottom App Bar-->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="4000dp"
+        android:scaleType="fitXY"
         android:src="@drawable/bottom_app_bar" />
 
 
