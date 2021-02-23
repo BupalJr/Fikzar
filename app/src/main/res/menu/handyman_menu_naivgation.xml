@@ -18,7 +18,7 @@
     <item
         android:id="@+id/packs"
         android:icon="@drawable/ic_baseline_stay_primary_landscape"
-        android:title="Packs" />
+        android:title="Credits" />
 
     <item
         android:id="@+id/account"

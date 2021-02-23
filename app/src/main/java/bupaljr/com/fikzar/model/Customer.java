@@ -1,6 +1,6 @@
 package bupaljr.com.fikzar.model;
 
-public class customer {
+public class Customer {
 
     private String profile_pic;
     private String full_name;
@@ -15,10 +15,10 @@ public class customer {
     private String member_since;
 
 
-    public customer() {
+    public Customer() {
     }
 
-    public customer(String profile_pic, String full_name, String user_name, String email,
+    public Customer(String profile_pic, String full_name, String user_name, String email,
                     String post_pic, String post_content, String jobs, String jobs_statement,
                     String location, String last_online, String member_since) {
         this.profile_pic = profile_pic;

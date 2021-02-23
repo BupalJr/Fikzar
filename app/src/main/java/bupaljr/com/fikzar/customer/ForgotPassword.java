@@ -1,10 +1,12 @@
 package bupaljr.com.fikzar.customer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -24,6 +26,8 @@ public class ForgotPassword extends AppCompatActivity {
     private Button btnSubmit;
     private ProgressBar progressBar;
 
+    ImageView clickBack;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +45,15 @@ public class ForgotPassword extends AppCompatActivity {
                 resetPassword();
             }
 
+        });
+
+        // Go Back Arrow ->
+        clickBack = findViewById(R.id.view_back_arrow);
+        clickBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ForgotPassword.this, MainActivity.class));
+            }
         });
     }
 

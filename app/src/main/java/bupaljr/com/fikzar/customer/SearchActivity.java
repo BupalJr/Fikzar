@@ -3,6 +3,8 @@ package bupaljr.com.fikzar.customer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,12 +15,21 @@ import bupaljr.com.fikzar.R;
 
 public class SearchActivity extends AppCompatActivity {
 
-
+    LinearLayout llClickPainting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+
+        llClickPainting = findViewById(R.id.click_painting);
+
+        llClickPainting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SearchActivity.this, DisplaySearch.class));
+            }
+        });
 
         // Initialize variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);

@@ -10,9 +10,19 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import bupaljr.com.fikzar.customer.MainActivity;
+import bupaljr.com.fikzar.handyman.HandymanAccountSetup;
 import bupaljr.com.fikzar.handyman.HandymanMainActivity;
 
 public class SplashScreen extends AppCompatActivity {
@@ -21,6 +31,11 @@ public class SplashScreen extends AppCompatActivity {
     Animation topAnim, bottomAnim, rightSideAnim, leftSideAnim;
     ImageView imageLogo, splashLogo;
     Button btnLookingHandyman, btnIAmHandyman;
+
+
+    FirebaseAuth mAuth;
+    DatabaseReference databaseReference;
+    FirebaseUser mUser;
 
 
     @Override
@@ -41,7 +56,7 @@ public class SplashScreen extends AppCompatActivity {
         imageLogo = findViewById(R.id.image_logo);
         splashLogo = findViewById(R.id.splash_logo);
         btnIAmHandyman = findViewById(R.id.btn_i_am_handyman);
-        btnLookingHandyman  = findViewById(R.id.btn_looking_handyman);
+        btnLookingHandyman = findViewById(R.id.btn_looking_handyman);
 
         // Set animations
         btnIAmHandyman.setAnimation(bottomAnim);
@@ -50,13 +65,51 @@ public class SplashScreen extends AppCompatActivity {
         imageLogo.setAnimation(topAnim);
         splashLogo.setAnimation(topAnim);
 
-        // To customer dashboard
-  btnLookingHandyman.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-          startActivity(new Intent(SplashScreen.this, MainActivity.class));
-      }
-  });
+        mAuth = FirebaseAuth.getInstance();
+        mUser = mAuth.getCurrentUser();
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Users");
+
+
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                if (mUser != null) {
+                    databaseReference.child(mUser.getUid()).addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            if (snapshot.exists()) {
+                                Intent intent = new Intent(SplashScreen.this, HandymanMainActivity.class);
+                                startActivity(intent);
+                                finish();
+                            } else {
+                                Intent intent = new Intent(SplashScreen.this, HandymanAccountSetup.class);
+                                startActivity(intent);
+                                finish();
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+                } else {
+                    Intent intent = new Intent(SplashScreen.this, HandymanMainActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+
+            }
+        };
+
+
+        // To Customer dashboard
+        btnLookingHandyman.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SplashScreen.this, MainActivity.class));
+            }
+        });
 
         // To handyman dashboard
         btnIAmHandyman.setOnClickListener(new View.OnClickListener() {

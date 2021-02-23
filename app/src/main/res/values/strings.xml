@@ -5,4 +5,5 @@
     <!--    Titles and Descriptions-->
     <string name="search_title">How Can We Help You?</string>
     <string name="search_text">Search for services...</string>
+    <string name="h_sign_up">H-SIGN UP</string>
 </resources>
