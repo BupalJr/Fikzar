@@ -113,10 +113,6 @@ public class HandymanDashboard extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.home:
-//                        startActivity(new Intent(getApplicationContext()
-//                                , HandymanDashboard.class));
-//                        overridePendingTransition(0, 0);
-//                        return true;
                     case R.id.jobs:
                         startActivity(new Intent(getApplicationContext()
                                 , HandymanJobs.class));

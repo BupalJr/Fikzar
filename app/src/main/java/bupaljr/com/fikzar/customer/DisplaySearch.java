@@ -15,16 +15,16 @@ import bupaljr.com.fikzar.StartChatActivity;
 public class DisplaySearch extends AppCompatActivity {
 
 
-    ImageView chat1;
+    ImageView chat2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_search);
 
-        chat1 = findViewById(R.id.chat_1);
+        chat2 = findViewById(R.id.chat_2);
 
-        chat1.setOnClickListener(new View.OnClickListener() {
+        chat2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(DisplaySearch.this, StartChatActivity.class));

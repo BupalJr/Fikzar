@@ -15,16 +15,16 @@ import bupaljr.com.fikzar.R;
 
 public class SearchActivity extends AppCompatActivity {
 
-    LinearLayout llClickPainting;
+    LinearLayout llMovingHelp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
-        llClickPainting = findViewById(R.id.click_painting);
+        llMovingHelp = findViewById(R.id.click_moving_help);
 
-        llClickPainting.setOnClickListener(new View.OnClickListener() {
+        llMovingHelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SearchActivity.this, DisplaySearch.class));

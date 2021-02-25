@@ -9,21 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_fikzar_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fikzar">
-        <activity android:name=".StartChatActivity"></activity>
-        <activity android:name=".handyman.HandymanAccountSetup" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".HandymanProfile" />
+        <activity android:name=".StartChatActivity" />
+
+
         <!-- Customer Activities -->
         <activity android:name=".customer.MainActivity" />
         <activity android:name=".customer.RegisterUserActivity" />
         <activity android:name=".customer.ForgotPassword" />
         <activity android:name=".customer.DashboardActivity" />
-
         <activity android:name=".customer.SearchActivity" />
         <activity android:name=".customer.DisplaySearch" />
         <activity android:name=".customer.ChatsActivity" />
@@ -32,7 +33,8 @@
         <activity android:name=".customer.UserProfileActivity" />
         <activity android:name=".customer.SettingsActivity" />
         <activity android:name=".customer.AboutUsActivity" />
-        <activity android:name=".HandymanProfile" /> <!-- Handyman Activities -->
+
+        <!-- Handyman Activities -->
         <activity android:name=".handyman.HandymanMainActivity" />
         <activity android:name=".handyman.RegisterHandyman" />
         <activity android:name=".handyman.ForgotPasswordHandyman" />
@@ -42,6 +44,7 @@
         <activity android:name=".handyman.HandymanSettings" />
         <activity android:name=".handyman.HandymanChats" />
         <activity android:name=".handyman.HandymanJobs" />
+        <activity android:name=".handyman.HandymanAccountSetup" />
     </application>
 
 </manifest>
