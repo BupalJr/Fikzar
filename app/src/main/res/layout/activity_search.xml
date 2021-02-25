@@ -316,6 +316,7 @@
 
         <!--    Moving -->
         <LinearLayout
+            android:id="@+id/click_moving_help"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
