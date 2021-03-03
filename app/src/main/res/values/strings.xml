@@ -6,4 +6,10 @@
     <string name="search_title">How Can We Help You?</string>
     <string name="search_text">Search for services...</string>
     <string name="h_sign_up">H-SIGN UP</string>
+    <string name="last_chat_statement_appears_here">Last chat statement.......</string>
+    <string name="full_name">John Smith</string>
+    <string name="paypal">Paypal</string>
+    <string name="todo">TODO</string>
+    <string name="choose_payment">Choose Payment</string>
+    <string name="debit_credit_card">Debit/Credit Card</string>
 </resources>
