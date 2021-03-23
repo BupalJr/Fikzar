@@ -213,7 +213,7 @@
         app:itemBackground="@color/PurpleFik_1"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
-        app:menu="@menu/menu_navigation" />
+        app:menu="@menu/customer_menu_navigation" />
 
     <!--    Bottom App Bar-->
     <ImageView

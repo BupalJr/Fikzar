@@ -9,16 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_fikzar_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fikzar">
-        <activity android:name=".SplashScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".handyman.HandymanCardPayment"></activity>
+        <activity android:name=".handyman.HandymanPaymentMethods" />
+        <activity android:name=".SplashScreen" />
 
         <activity android:name=".HandymanProfile" />
         <activity android:name=".StartChatActivity" />
-
 
         <!-- Customer Activities -->
         <activity android:name=".customer.MainActivity" />
@@ -39,7 +35,13 @@
         <activity android:name=".handyman.RegisterHandyman" />
         <activity android:name=".handyman.ForgotPasswordHandyman" />
         <activity android:name=".handyman.HandymanDashboard" />
-        <activity android:name=".handyman.HandymanPacks" />
+        <activity android:name=".handyman.HandymanPacks">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".handyman.HandymanAccount" />
         <activity android:name=".handyman.HandymanSettings" />
         <activity android:name=".handyman.HandymanChats" />

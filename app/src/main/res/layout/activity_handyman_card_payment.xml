@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb1"
+    tools:context=".handyman.HandymanCardPayment">
+
+    <!--        Back arrow-->
+    <ImageView
+        android:id="@+id/view_back_arrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_baseline_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="46dp"
+        android:elevation="100dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Pay by CArd"
+        android:textColor="@color/PurpleFik_1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/view_back_arrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="255dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mainImageView"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="144dp"
+                android:layout_marginLeft="144dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="167dp"
+                android:layout_marginRight="167dp"
+                android:src="@drawable/debit_card_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/input_card_number"
+                android:layout_width="225dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:hint="card number"
+                android:inputType="number"
+                android:textColor="@color/PurpleFik_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.361"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mainImageView" />
+
+            <EditText
+                android:id="@+id/input_expiry_card"
+                android:layout_width="115dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginLeft="42dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:hint="Expiry date"
+                android:inputType="date|textEmailAddress"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_card_number" />
+
+            <EditText
+                android:id="@+id/input_cvv"
+                android:layout_width="115dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginLeft="76dp"
+                android:layout_marginEnd="89dp"
+                android:layout_marginRight="89dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:hint="CVV"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/input_expiry_card"
+                app:layout_constraintTop_toBottomOf="@+id/input_card_number" />
+
+            <EditText
+                android:id="@+id/input_card_name"
+                android:layout_width="225dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:hint="card name"
+                android:inputType="textPersonName"
+                android:textColor="@color/PurpleFik_1"
+                app:layout_constraintEnd_toEndOf="@+id/input_cvv"
+                app:layout_constraintStart_toStartOf="@+id/input_expiry_card"
+                app:layout_constraintTop_toBottomOf="@+id/input_expiry_card" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@+id/input_card_name"
+                android:layout_marginTop="4dp"
+                android:weightSum="1"
+                app:layout_constraintEnd_toEndOf="@+id/input_card_name"
+                app:layout_constraintStart_toStartOf="@+id/input_card_name"
+                app:layout_constraintTop_toBottomOf="@+id/input_card_name">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Save card details"
+                    android:textSize="10dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/pay_btn"
+                android:layout_width="94dp"
+                android:layout_height="42dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Pay"
+                android:textColor="@color/WhiteFik"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+                app:layout_constraintStart_toStartOf="@+id/radioGroup"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--  Bottom App Bar-->
+    <ImageView
+        android:id="@+id/bottom_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottom_app_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
