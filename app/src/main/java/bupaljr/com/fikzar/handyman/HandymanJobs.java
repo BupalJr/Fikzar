@@ -31,7 +31,6 @@ public class HandymanJobs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_handyman_jobs);
 
-
         // Initialize variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 

@@ -68,7 +68,6 @@ public class RegisterHandyman extends AppCompatActivity implements View.OnClickL
         mAuth = FirebaseAuth.getInstance();
 
         btnSignUp = findViewById(R.id.btn_submit);
-//        btnSignUp.setOnClickListener(this);
 
         clickBack = findViewById(R.id.view_back_arrow);
 

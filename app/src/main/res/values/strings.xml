@@ -12,4 +12,5 @@
     <string name="todo">TODO</string>
     <string name="choose_payment">Choose Payment</string>
     <string name="debit_credit_card">Debit/Credit Card</string>
+    <string name="about_us_script_2">Here you can find the closest handyman in your area!</string>
 </resources>

@@ -121,7 +121,7 @@
         android:layout_height="48dp"
         android:background="@drawable/btn_bg"
         android:shadowColor="@color/WhiteFik"
-        android:text=" C-SIGN UP"
+        android:text="SIGN UP"
         android:textAllCaps="true"
         android:textColor="@color/WhiteFik"
         android:textSize="24sp"

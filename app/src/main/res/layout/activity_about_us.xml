@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Here you can find the closest handyman in your area!"
+            android:text="@string/about_us_script_2"
             android:textColor="@color/PurpleFik_1"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -48,7 +48,7 @@
         <LinearLayout
             android:id="@+id/process"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="125dp"
             android:layout_below="@id/about_layout"
             android:paddingTop="20dp">
 
