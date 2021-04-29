@@ -1,6 +1,11 @@
-# A platform you can find any handyman near you
+### Search. chat and get it fix with Fikzar
 
-## Search, Chat and Book
+<img src="/vews/logo.png"/>
+
+Fikzar is a final year project for the University of the West of England that aims to make it easier for customers to find the nearest handyman, as well as a social networking site where they can chat and see the latest posts of handyman's latest jobs. The handyman's profile will include all of their contact information as well as the services they specialise in, as well as the ability to showcase their most recent work. When a customer searches for the work they want done, the app will connect them with the nearest handyman who can complete the task. 
 
 
-Fikzar is to make it easier for the customer to find the closest handyman near, it is also a social site to be able to chat and see the latest posts of the handyman’s latest jobs. The handyman’s profile will have all the details and the service they specialise in, and they can post their latest work. Once the customer searches for the work, they want to be done for them, the application will give them the nearest handyman who does the exact service.
+
+
+### Authors
+Abdirahman Ali
