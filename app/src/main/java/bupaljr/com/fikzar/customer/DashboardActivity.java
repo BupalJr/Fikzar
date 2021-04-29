@@ -117,11 +117,7 @@ public class DashboardActivity extends AppCompatActivity {
             protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull Posts model) {
                 holder.postDes.setText(model.getPostDesc());
                 holder.postTime.setText(model.getPostTime());
-//                holder.username.setText(model.getUsername());
                 Picasso.get().load(model.getPostImageUrl()).into(holder.postImage);
-//                Picasso.get().load(model.getUserProfileImageUrl()).into(holder.profileImage);
-
-
             }
 
             @NonNull
@@ -140,7 +136,6 @@ public class DashboardActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_CODE && resultCode == RESULT_OK && data != null) {
             imageUri = data.getData();
-//            addImagePost.setImageURI(imageUri);
         }
     }
 }

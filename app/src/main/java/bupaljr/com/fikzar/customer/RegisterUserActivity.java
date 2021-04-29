@@ -76,7 +76,6 @@ public class RegisterUserActivity extends AppCompatActivity implements View.OnCl
         switch (view.getId()) {
             case R.id.btn_submit:
                 registerUser();
-//                registerDatabase();
                 break;
         }
     }
@@ -142,7 +141,6 @@ public class RegisterUserActivity extends AppCompatActivity implements View.OnCl
                 map.put("FullName", editTextFullName.getText().toString());
                 map.put("UserName", editTextUserName.getText().toString());
                 map.put("Email", editTextEmail.getText().toString());
-//                map.put("Password", editTextPassword.getText().toString());
 
                 MainPost.push()
                         .setValue(map)
