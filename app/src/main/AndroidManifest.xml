@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_fikzar_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fikzar">
-
+        <activity android:name=".ChooseMainActivity"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,12 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity android:name=".HandymanProfile" />
-        <activity android:name=".StartChatActivity" />
-
-        <!-- Customer Activities -->
+        <activity android:name=".StartChatActivity" /> <!-- Customer Activities -->
         <activity android:name=".customer.MainActivity" />
         <activity android:name=".customer.RegisterUserActivity" />
         <activity android:name=".customer.ForgotPassword" />
@@ -36,9 +32,7 @@
         <activity android:name=".customer.AccountActivity" />
         <activity android:name=".customer.UserProfileActivity" />
         <activity android:name=".customer.SettingsActivity" />
-        <activity android:name=".customer.AboutUsActivity" />
-
-        <!-- Handyman Activities -->
+        <activity android:name=".customer.AboutUsActivity" /> <!-- Handyman Activities -->
         <activity android:name=".handyman.HandymanMainActivity" />
         <activity android:name=".handyman.RegisterHandyman" />
         <activity android:name=".handyman.ForgotPasswordHandyman" />

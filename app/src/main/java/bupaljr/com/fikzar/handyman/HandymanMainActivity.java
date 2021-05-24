@@ -7,6 +7,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,7 +26,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import bupaljr.com.fikzar.ChooseMainActivity;
 import bupaljr.com.fikzar.R;
+import bupaljr.com.fikzar.customer.MainActivity;
 
 public class HandymanMainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -33,6 +36,7 @@ public class HandymanMainActivity extends AppCompatActivity implements View.OnCl
     private TextView register, forgotPassword;
     private EditText inputLoginEmail, inputPassword;
     private Button btnLogin;
+    ImageView clickBack;
 
 
     private FirebaseAuth mAuth;
@@ -63,6 +67,15 @@ public class HandymanMainActivity extends AppCompatActivity implements View.OnCl
 //        databaseReference = FirebaseDatabase.getInstance().getReference().child("HandymanUsers");
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
+        // Go to the profile ->
+        clickBack = findViewById(R.id.view_back_arrow);
+        clickBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HandymanMainActivity.this, ChooseMainActivity.class));
+            }
+        });
 
 
     }

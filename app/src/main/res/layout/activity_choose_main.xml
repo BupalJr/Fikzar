@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb5"
+    tools:context=".ChooseMainActivity">
+
+    <Button
+        android:id="@+id/btn_i_am_handyman"
+        android:layout_width="286dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/splash_btn"
+        android:text="@string/i_am_handyman"
+        android:textColor="@color/WhiteFik"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/PurpleFik_1"
+        app:layout_constraintEnd_toEndOf="@+id/btn_looking_handyman"
+        app:layout_constraintStart_toStartOf="@+id/btn_looking_handyman"
+        app:layout_constraintTop_toBottomOf="@+id/btn_looking_handyman" />
+
+    <Button
+        android:id="@+id/btn_looking_handyman"
+        android:layout_width="278dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/splash_btn"
+        android:text="@string/looking_for_handyman"
+        android:textColor="@color/WhiteFik"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/PurpleFik_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    Bottom App Bar-->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/bottom_app_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

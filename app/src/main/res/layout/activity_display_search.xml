@@ -19,6 +19,8 @@
             android:orientation="horizontal">
 
             <!--        Back arrow-->
+
+            <!--    Title -->
             <ImageView
                 android:id="@+id/view_back_arrow"
                 android:layout_width="match_parent"
@@ -26,7 +28,6 @@
                 android:paddingTop="50dp"
                 android:src="@drawable/ic_baseline_arrow_back" />
 
-            <!--    Title -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

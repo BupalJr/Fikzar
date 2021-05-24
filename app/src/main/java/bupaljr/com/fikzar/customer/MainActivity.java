@@ -6,6 +6,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +20,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import bupaljr.com.fikzar.ChooseMainActivity;
 import bupaljr.com.fikzar.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView register, forgotPassword;
     private EditText inputLoginEmail, inputPassword;
     private Button btnLogin;
+    ImageView clickBack;
 
 
     private FirebaseAuth mAuth;
@@ -53,6 +56,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mAuth = FirebaseAuth.getInstance();
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
+        // Go to the profile ->
+        clickBack = findViewById(R.id.view_back_arrow);
+        clickBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ChooseMainActivity.class));
+            }
+        });
 
 
     }

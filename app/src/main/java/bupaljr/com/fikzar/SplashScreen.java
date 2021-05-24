@@ -2,6 +2,7 @@ package bupaljr.com.fikzar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -30,7 +31,6 @@ public class SplashScreen extends AppCompatActivity {
     // Initialize variable
     Animation topAnim, bottomAnim, rightSideAnim, leftSideAnim;
     ImageView imageLogo, splashLogo;
-    Button btnLookingHandyman, btnIAmHandyman;
 
 
     FirebaseAuth mAuth;
@@ -55,12 +55,7 @@ public class SplashScreen extends AppCompatActivity {
 
         imageLogo = findViewById(R.id.image_logo);
         splashLogo = findViewById(R.id.splash_logo);
-        btnIAmHandyman = findViewById(R.id.btn_i_am_handyman);
-        btnLookingHandyman = findViewById(R.id.btn_looking_handyman);
 
-        // Set animations
-        btnIAmHandyman.setAnimation(bottomAnim);
-        btnLookingHandyman.setAnimation(bottomAnim);
 
         imageLogo.setAnimation(topAnim);
         splashLogo.setAnimation(topAnim);
@@ -69,6 +64,19 @@ public class SplashScreen extends AppCompatActivity {
         mUser = mAuth.getCurrentUser();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Users");
 
+        new Handler().postDelayed(new Runnable() {
+
+// Using handler with postDelayed called runnable run method
+
+            @Override
+            public void run() {
+                Intent intent = new Intent(SplashScreen.this, ChooseMainActivity.class);
+                startActivity(intent);
+
+                // close this activity
+                finish();
+            }
+        }, 5 * 1000); // wait for 5 seconds
 
         Runnable runnable = new Runnable() {
             @Override
@@ -101,22 +109,5 @@ public class SplashScreen extends AppCompatActivity {
 
             }
         };
-
-
-        // To Customer dashboard
-        btnLookingHandyman.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(SplashScreen.this, MainActivity.class));
-            }
-        });
-
-        // To handyman dashboard
-        btnIAmHandyman.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(SplashScreen.this, HandymanMainActivity.class));
-            }
-        });
     }
 }
